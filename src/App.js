@@ -1,11 +1,34 @@
 import "./App.css";
 import ExpenseItem from "./components/ExpenseItem";
-
+import Expenses from "./components/Expenses";
 function App() {
+  const expenses = [
+    {
+      title: "ini title",
+      date: new Date(),
+      amount: "price",
+    },
+    {
+      title: "ini title",
+      date: new Date(),
+      amount: "price",
+    },
+    {
+      title: "ini title",
+      date: new Date(),
+      amount: "price",
+    },
+    {
+      title: "ini title",
+      date: new Date(),
+      amount: "price",
+    },
+  ];
+
   return (
     <div>
       <h2>Let started</h2>
-      <ExpenseItem></ExpenseItem>
+      <Expenses expenses={expenses}></Expenses>
     </div>
   );
 }
